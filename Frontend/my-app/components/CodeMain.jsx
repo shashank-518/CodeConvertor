@@ -1,5 +1,8 @@
 import { useRef, useState } from "react";
 
+
+const API_URL = import.meta.env.VITE_API_URL;
+
 export function CodeMain() {
   const coding = useRef(null);
   const conversion = useRef(null);
@@ -26,7 +29,7 @@ export function CodeMain() {
     const toLang = conversion.current.value;
     const sourceCode = code.current.value;
 
-    const response = await fetch("http://localhost:3000/convert", {
+    const response = await fetch(`${API_URL}/convert`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ sourceCode, fromLang, toLang }),
