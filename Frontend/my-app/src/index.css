@@ -1,1 +1,8 @@
 @import "tailwindcss";
+
+.text-flash {
+  background-color: rgb(165, 165, 165);
+  padding: 2px 4px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
