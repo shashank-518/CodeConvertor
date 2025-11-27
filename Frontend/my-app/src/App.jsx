@@ -1,5 +1,5 @@
-import { CodeMain } from "../components/CodeMain"
-import { Navigation } from "../components/navigation"
+import { CodeMain } from "../components/CodeMain.jsx"
+import { Navigation } from "../components/Navigation.jsx"
 
 function App() {
   return <>
